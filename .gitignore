@@ -1,1 +1,13 @@
-**/env/
+$ cat .gitignore
+**/__pycache__/
+**/.pytest_cache/
+**/temp/
+tests/pytest.ini
+settings.json
+**/build/
+**/temp/
+**/dist/
+**/venv/
+**/.venv/
+**/.ipynb_checkpoints/
+**.coverage
