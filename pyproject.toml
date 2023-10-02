@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "interpolate-river"
+version = "0.1.0"
+description = ""
+authors = ["Saulo Silva Vieira"]
+readme = "README.md"
+packages = [{include = "interpolate_river"}]
+
+[tool.poetry.dependencies]
+python = "3.10.0"
+numpy = "^1.26.0"
+geopandas = "^0.14.0"
+matplotlib = "^3.8.0"
+utils = {git = "https://github.com/SauloVSFh/utils.git", rev = "master"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+pre-commit = "^3.4.0"
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
